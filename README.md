@@ -1,2 +1,4 @@
 # Look Up LA
-site to find ideal locations for stargazing
+A public, auto-updating stargazing map for the LA area. 
+
+🚧 Work in progress.

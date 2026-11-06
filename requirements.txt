@@ -1,0 +1,6 @@
+requests
+numpy
+rasterio
+geopandas
+skyfield
+pytest
