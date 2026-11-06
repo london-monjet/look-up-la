@@ -1,2 +1,2 @@
-# dark-sky-finder
+# Look Up LA
 site to find ideal locations for stargazing
