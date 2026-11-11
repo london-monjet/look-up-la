@@ -15,7 +15,10 @@
         "name": "Chilao Visitor Center",
         "area": "Angeles National Forest",
         "source": "curated",
-        "elevation_m": 1696.4
+        "elevation_m": 1696.4,
+        "artificial_mcd": 0.4979,
+        "sky_mag": 20.53,
+        "dark": 0.707
       }
     },
     {
@@ -32,7 +35,10 @@
         "name": "Dawson Saddle",
         "area": "Angeles National Forest",
         "source": "curated",
-        "elevation_m": 2595.4
+        "elevation_m": 2595.4,
+        "artificial_mcd": 0.3461,
+        "sky_mag": 20.81,
+        "dark": 0.762
       }
     },
     {
@@ -49,7 +55,10 @@
         "name": "Table Mountain Campground",
         "area": "Angeles National Forest",
         "source": "curated",
-        "elevation_m": 2093.3
+        "elevation_m": 2093.3,
+        "artificial_mcd": 0.3221,
+        "sky_mag": 20.86,
+        "dark": 0.772
       }
     },
     {
@@ -66,7 +75,10 @@
         "name": "Manker Flats",
         "area": "Mt. Baldy",
         "source": "curated",
-        "elevation_m": 1362.4
+        "elevation_m": 1362.4,
+        "artificial_mcd": 0.6974,
+        "sky_mag": 20.25,
+        "dark": 0.65
       }
     },
     {
@@ -83,7 +95,10 @@
         "name": "Devil's Punchbowl",
         "area": "Antelope Valley",
         "source": "curated",
-        "elevation_m": 1397.0
+        "elevation_m": 1397.0,
+        "artificial_mcd": 0.3018,
+        "sky_mag": 20.91,
+        "dark": 0.782
       }
     },
     {
@@ -100,7 +115,10 @@
         "name": "Sandstone Peak Trailhead",
         "area": "Santa Monica Mountains",
         "source": "curated",
-        "elevation_m": 776.9
+        "elevation_m": 776.9,
+        "artificial_mcd": 0.5645,
+        "sky_mag": 20.43,
+        "dark": 0.686
       }
     },
     {
@@ -117,7 +135,10 @@
         "name": "Mt. Pinos Parking Area",
         "area": "Los Padres National Forest",
         "source": "curated",
-        "elevation_m": 2671.8
+        "elevation_m": 2671.8,
+        "artificial_mcd": 0.0483,
+        "sky_mag": 21.73,
+        "dark": 0.947
       }
     },
     {
@@ -134,7 +155,10 @@
         "name": "Figueroa Mountain",
         "area": "Los Padres National Forest",
         "source": "curated",
-        "elevation_m": 1070.6
+        "elevation_m": 1070.6,
+        "artificial_mcd": 0.0225,
+        "sky_mag": 21.87,
+        "dark": 0.974
       }
     },
     {
@@ -151,7 +175,10 @@
         "name": "Carrizo Plain Goodwin Center",
         "area": "Carrizo Plain National Monument",
         "source": "curated",
-        "elevation_m": 800.3
+        "elevation_m": 800.3,
+        "artificial_mcd": 0.0853,
+        "sky_mag": 21.57,
+        "dark": 0.913
       }
     },
     {
@@ -168,7 +195,10 @@
         "name": "Saddleback Butte State Park",
         "area": "Antelope Valley",
         "source": "curated",
-        "elevation_m": 786.3
+        "elevation_m": 786.3,
+        "artificial_mcd": 0.1824,
+        "sky_mag": 21.22,
+        "dark": 0.844
       }
     },
     {
@@ -185,7 +215,10 @@
         "name": "Humber Park",
         "area": "San Jacinto Mountains",
         "source": "curated",
-        "elevation_m": 1837.5
+        "elevation_m": 1837.5,
+        "artificial_mcd": 0.1839,
+        "sky_mag": 21.22,
+        "dark": 0.843
       }
     },
     {
@@ -202,7 +235,10 @@
         "name": "Palomar Mountain State Park",
         "area": "Palomar Mountain",
         "source": "curated",
-        "elevation_m": 1365.1
+        "elevation_m": 1365.1,
+        "artificial_mcd": 0.1353,
+        "sky_mag": 21.38,
+        "dark": 0.875
       }
     },
     {
@@ -219,7 +255,10 @@
         "name": "Paso Picacho Campground",
         "area": "Cuyamaca Rancho State Park",
         "source": "curated",
-        "elevation_m": 1376.5
+        "elevation_m": 1376.5,
+        "artificial_mcd": 0.0629,
+        "sky_mag": 21.67,
+        "dark": 0.933
       }
     },
     {
@@ -236,7 +275,10 @@
         "name": "Laguna Mountain Recreation Area",
         "area": "Cleveland National Forest",
         "source": "curated",
-        "elevation_m": 1809.2
+        "elevation_m": 1809.2,
+        "artificial_mcd": 0.0437,
+        "sky_mag": 21.76,
+        "dark": 0.951
       }
     },
     {
@@ -253,7 +295,10 @@
         "name": "Chula Vista Walk-In Campground",
         "area": "Los Padres National Forest",
         "source": "curated",
-        "elevation_m": 2079.6
+        "elevation_m": 2079.6,
+        "artificial_mcd": 0.0506,
+        "sky_mag": 21.72,
+        "dark": 0.945
       }
     },
     {
@@ -270,7 +315,10 @@
         "name": "Keys View",
         "area": "Joshua Tree National Park",
         "source": "curated",
-        "elevation_m": 1566.4
+        "elevation_m": 1566.4,
+        "artificial_mcd": 0.1117,
+        "sky_mag": 21.46,
+        "dark": 0.892
       }
     },
     {
@@ -287,7 +335,10 @@
         "name": "Hidden Valley",
         "area": "Joshua Tree National Park",
         "source": "curated",
-        "elevation_m": 1284.8
+        "elevation_m": 1284.8,
+        "artificial_mcd": 0.0675,
+        "sky_mag": 21.64,
+        "dark": 0.929
       }
     },
     {
@@ -304,7 +355,10 @@
         "name": "Jumbo Rocks Campground",
         "area": "Joshua Tree National Park",
         "source": "curated",
-        "elevation_m": 1371.2
+        "elevation_m": 1371.2,
+        "artificial_mcd": 0.0496,
+        "sky_mag": 21.73,
+        "dark": 0.946
       }
     },
     {
@@ -321,7 +375,10 @@
         "name": "Cottonwood Spring",
         "area": "Joshua Tree National Park",
         "source": "curated",
-        "elevation_m": 938.2
+        "elevation_m": 938.2,
+        "artificial_mcd": 0.0281,
+        "sky_mag": 21.84,
+        "dark": 0.968
       }
     },
     {
@@ -338,7 +395,10 @@
         "name": "Borrego Palm Canyon Campground",
         "area": "Anza-Borrego Desert State Park",
         "source": "curated",
-        "elevation_m": 409.5
+        "elevation_m": 409.5,
+        "artificial_mcd": 0.0421,
+        "sky_mag": 21.76,
+        "dark": 0.953
       }
     },
     {
@@ -355,7 +415,10 @@
         "name": "Anza-Borrego Visitor Center",
         "area": "Anza-Borrego Desert State Park",
         "source": "curated",
-        "elevation_m": 234.9
+        "elevation_m": 234.9,
+        "artificial_mcd": 0.0616,
+        "sky_mag": 21.67,
+        "dark": 0.934
       }
     },
     {
@@ -372,7 +435,10 @@
         "name": "Blair Valley Campground",
         "area": "Borrego Springs",
         "source": "curated",
-        "elevation_m": 774.9
+        "elevation_m": 774.9,
+        "artificial_mcd": 0.0343,
+        "sky_mag": 21.8,
+        "dark": 0.961
       }
     },
     {
@@ -389,7 +455,10 @@
         "name": "Magic Portal Stargazer's Retreat",
         "area": "Mojave Desert",
         "source": "curated",
-        "elevation_m": 819.2
+        "elevation_m": 819.2,
+        "artificial_mcd": 0.2104,
+        "sky_mag": 21.14,
+        "dark": 0.828
       }
     }
   ]
