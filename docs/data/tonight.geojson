@@ -1,0 +1,511 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0121,
+          34.3359
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "Chilao Visitor Center",
+        "area": "Angeles National Forest",
+        "elevation_m": 1696.4,
+        "dark": 0.707,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 100,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.804,
+          34.356
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "name": "Dawson Saddle",
+        "area": "Angeles National Forest",
+        "elevation_m": 2595.4,
+        "dark": 0.762,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 100,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.69,
+          34.379
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "name": "Table Mountain Campground",
+        "area": "Angeles National Forest",
+        "elevation_m": 2093.3,
+        "dark": 0.772,
+        "score": 2,
+        "cloud": 96,
+        "humidity": 99,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.652,
+          34.239
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "name": "Manker Flats",
+        "area": "Mt. Baldy",
+        "elevation_m": 1362.4,
+        "dark": 0.65,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 92,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.857,
+          34.4125
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "name": "Devil's Punchbowl",
+        "area": "Antelope Valley",
+        "elevation_m": 1397.0,
+        "dark": 0.782,
+        "score": 19,
+        "cloud": 67,
+        "humidity": 84,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.9293,
+          34.1186
+        ]
+      },
+      "properties": {
+        "id": 6,
+        "name": "Sandstone Peak Trailhead",
+        "area": "Santa Monica Mountains",
+        "elevation_m": 776.9,
+        "dark": 0.686,
+        "score": 3,
+        "cloud": 95,
+        "humidity": 85,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1417,
+          34.8142
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "name": "Mt. Pinos Parking Area",
+        "area": "Los Padres National Forest",
+        "elevation_m": 2671.8,
+        "dark": 0.947,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 96,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.991,
+          34.736
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "name": "Figueroa Mountain",
+        "area": "Los Padres National Forest",
+        "elevation_m": 1070.6,
+        "dark": 0.974,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 98,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.6975,
+          35.1905
+        ]
+      },
+      "properties": {
+        "id": 9,
+        "name": "Carrizo Plain Goodwin Center",
+        "area": "Carrizo Plain National Monument",
+        "elevation_m": 800.3,
+        "dark": 0.913,
+        "score": 1,
+        "cloud": 99,
+        "humidity": 89,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.831,
+          34.676
+        ]
+      },
+      "properties": {
+        "id": 10,
+        "name": "Saddleback Butte State Park",
+        "area": "Antelope Valley",
+        "elevation_m": 786.3,
+        "dark": 0.844,
+        "score": 11,
+        "cloud": 83,
+        "humidity": 77,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.7064,
+          33.7589
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "name": "Humber Park",
+        "area": "San Jacinto Mountains",
+        "elevation_m": 1837.5,
+        "dark": 0.843,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 100,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.911,
+          33.348
+        ]
+      },
+      "properties": {
+        "id": 12,
+        "name": "Palomar Mountain State Park",
+        "area": "Palomar Mountain",
+        "elevation_m": 1365.1,
+        "dark": 0.875,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 100,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.5597,
+          32.9494
+        ]
+      },
+      "properties": {
+        "id": 13,
+        "name": "Paso Picacho Campground",
+        "area": "Cuyamaca Rancho State Park",
+        "elevation_m": 1376.5,
+        "dark": 0.933,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 100,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.42,
+          32.87
+        ]
+      },
+      "properties": {
+        "id": 14,
+        "name": "Laguna Mountain Recreation Area",
+        "area": "Cleveland National Forest",
+        "elevation_m": 1809.2,
+        "dark": 0.951,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 100,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.12609407064167,
+          34.82947045488243
+        ]
+      },
+      "properties": {
+        "id": 15,
+        "name": "Chula Vista Walk-In Campground",
+        "area": "Los Padres National Forest",
+        "elevation_m": 2079.6,
+        "dark": 0.945,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 99,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.1866,
+          33.9269
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "name": "Keys View",
+        "area": "Joshua Tree National Park",
+        "elevation_m": 1566.4,
+        "dark": 0.892,
+        "score": 31,
+        "cloud": 52,
+        "humidity": 93,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.1678,
+          34.0125
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "name": "Hidden Valley",
+        "area": "Joshua Tree National Park",
+        "elevation_m": 1284.8,
+        "dark": 0.929,
+        "score": 43,
+        "cloud": 39,
+        "humidity": 79,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.0683,
+          34.0128
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "name": "Jumbo Rocks Campground",
+        "area": "Joshua Tree National Park",
+        "elevation_m": 1371.2,
+        "dark": 0.946,
+        "score": 42,
+        "cloud": 42,
+        "humidity": 80,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.82,
+          33.7458
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "name": "Cottonwood Spring",
+        "area": "Joshua Tree National Park",
+        "elevation_m": 938.2,
+        "dark": 0.968,
+        "score": 39,
+        "cloud": 50,
+        "humidity": 69,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.431,
+          33.275
+        ]
+      },
+      "properties": {
+        "id": 20,
+        "name": "Borrego Palm Canyon Campground",
+        "area": "Anza-Borrego Desert State Park",
+        "elevation_m": 409.5,
+        "dark": 0.953,
+        "score": 21,
+        "cloud": 74,
+        "humidity": 60,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.4003,
+          33.2578
+        ]
+      },
+      "properties": {
+        "id": 21,
+        "name": "Anza-Borrego Visitor Center",
+        "area": "Anza-Borrego Desert State Park",
+        "elevation_m": 234.9,
+        "dark": 0.934,
+        "score": 12,
+        "cloud": 84,
+        "humidity": 57,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.40946556963132,
+          33.03818982184881
+        ]
+      },
+      "properties": {
+        "id": 22,
+        "name": "Blair Valley Campground",
+        "area": "Borrego Springs",
+        "elevation_m": 774.9,
+        "dark": 0.961,
+        "score": 17,
+        "cloud": 76,
+        "humidity": 80,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36629460025274,
+          34.75583111481551
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "name": "Magic Portal Stargazer's Retreat",
+        "area": "Mojave Desert",
+        "elevation_m": 819.2,
+        "dark": 0.828,
+        "score": 21,
+        "cloud": 67,
+        "humidity": 79,
+        "moon_illum": 22,
+        "updated": "2026-11-13T19:06:50+00:00"
+      }
+    }
+  ]
+}

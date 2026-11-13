@@ -4,3 +4,4 @@ rasterio
 geopandas
 skyfield
 pytest
+tzdata
