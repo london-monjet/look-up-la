@@ -16,11 +16,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 1696.4,
         "dark": 0.707,
-        "score": 48,
-        "cloud": 6,
-        "humidity": 90,
+        "score": 44,
+        "cloud": 12,
+        "humidity": 92,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -40,9 +40,9 @@
         "dark": 0.762,
         "score": 63,
         "cloud": 0,
-        "humidity": 51,
+        "humidity": 54,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -62,9 +62,9 @@
         "dark": 0.772,
         "score": 61,
         "cloud": 0,
-        "humidity": 63,
+        "humidity": 64,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -82,11 +82,11 @@
         "area": "Mt. Baldy",
         "elevation_m": 1362.4,
         "dark": 0.65,
-        "score": 21,
-        "cloud": 55,
-        "humidity": 82,
+        "score": 34,
+        "cloud": 30,
+        "humidity": 78,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -104,11 +104,11 @@
         "area": "Antelope Valley",
         "elevation_m": 1397.0,
         "dark": 0.782,
-        "score": 63,
+        "score": 62,
         "cloud": 0,
-        "humidity": 60,
+        "humidity": 62,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -126,11 +126,11 @@
         "area": "Santa Monica Mountains",
         "elevation_m": 776.9,
         "dark": 0.686,
-        "score": 39,
-        "cloud": 26,
-        "humidity": 75,
+        "score": 40,
+        "cloud": 24,
+        "humidity": 71,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -148,11 +148,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 2671.8,
         "dark": 0.947,
-        "score": 45,
-        "cloud": 44,
-        "humidity": 48,
+        "score": 68,
+        "cloud": 19,
+        "humidity": 35,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -170,11 +170,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 1070.6,
         "dark": 0.974,
-        "score": 30,
-        "cloud": 58,
-        "humidity": 83,
+        "score": 57,
+        "cloud": 20,
+        "humidity": 82,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -192,11 +192,11 @@
         "area": "Carrizo Plain National Monument",
         "elevation_m": 800.3,
         "dark": 0.913,
-        "score": 24,
-        "cloud": 66,
-        "humidity": 69,
+        "score": 45,
+        "cloud": 36,
+        "humidity": 68,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -214,11 +214,11 @@
         "area": "Antelope Valley",
         "elevation_m": 786.3,
         "dark": 0.844,
-        "score": 56,
-        "cloud": 11,
-        "humidity": 81,
+        "score": 64,
+        "cloud": 0,
+        "humidity": 75,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -236,11 +236,11 @@
         "area": "San Jacinto Mountains",
         "elevation_m": 1837.5,
         "dark": 0.843,
-        "score": 62,
-        "cloud": 4,
-        "humidity": 72,
+        "score": 55,
+        "cloud": 14,
+        "humidity": 74,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -258,11 +258,11 @@
         "area": "Palomar Mountain",
         "elevation_m": 1365.1,
         "dark": 0.875,
-        "score": 20,
-        "cloud": 67,
-        "humidity": 95,
+        "score": 47,
+        "cloud": 26,
+        "humidity": 85,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -280,11 +280,11 @@
         "area": "Cuyamaca Rancho State Park",
         "elevation_m": 1376.5,
         "dark": 0.933,
-        "score": 47,
-        "cloud": 29,
-        "humidity": 90,
+        "score": 43,
+        "cloud": 36,
+        "humidity": 88,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -302,11 +302,11 @@
         "area": "Cleveland National Forest",
         "elevation_m": 1809.2,
         "dark": 0.951,
-        "score": 48,
-        "cloud": 33,
-        "humidity": 79,
+        "score": 67,
+        "cloud": 6,
+        "humidity": 76,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -324,11 +324,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 2079.6,
         "dark": 0.945,
-        "score": 45,
-        "cloud": 45,
-        "humidity": 42,
+        "score": 64,
+        "cloud": 21,
+        "humidity": 41,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -348,9 +348,9 @@
         "dark": 0.892,
         "score": 69,
         "cloud": 0,
-        "humidity": 70,
+        "humidity": 72,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -370,9 +370,9 @@
         "dark": 0.929,
         "score": 72,
         "cloud": 0,
-        "humidity": 69,
+        "humidity": 71,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -390,11 +390,11 @@
         "area": "Joshua Tree National Park",
         "elevation_m": 1371.2,
         "dark": 0.946,
-        "score": 75,
+        "score": 74,
         "cloud": 0,
-        "humidity": 65,
+        "humidity": 67,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -413,10 +413,10 @@
         "elevation_m": 938.2,
         "dark": 0.968,
         "score": 76,
-        "cloud": 1,
-        "humidity": 66,
+        "cloud": 0,
+        "humidity": 65,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -434,11 +434,11 @@
         "area": "Anza-Borrego Desert State Park",
         "elevation_m": 409.5,
         "dark": 0.953,
-        "score": 80,
+        "score": 81,
         "cloud": 0,
-        "humidity": 47,
+        "humidity": 42,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -456,11 +456,11 @@
         "area": "Anza-Borrego Desert State Park",
         "elevation_m": 234.9,
         "dark": 0.934,
-        "score": 78,
-        "cloud": 0,
-        "humidity": 50,
+        "score": 79,
+        "cloud": 1,
+        "humidity": 43,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -480,9 +480,9 @@
         "dark": 0.961,
         "score": 73,
         "cloud": 0,
-        "humidity": 73,
+        "humidity": 74,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     },
     {
@@ -500,11 +500,11 @@
         "area": "Mojave Desert",
         "elevation_m": 819.2,
         "dark": 0.828,
-        "score": 47,
-        "cloud": 23,
-        "humidity": 82,
+        "score": 56,
+        "cloud": 8,
+        "humidity": 81,
         "moon_illum": 30,
-        "updated": "2026-11-15T00:26:34+00:00"
+        "updated": "2026-11-15T03:39:04+00:00"
       }
     }
   ]
