@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Look Up LA</title>
+  <script type="module" src="https://js.arcgis.com/5.1/"></script>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex; flex-direction: column;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #0b1020; color: #e8ecf5;
+    }
+    header {
+      padding: 10px 16px; background: #121a33; border-bottom: 1px solid #243055;
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: 12px; flex-wrap: wrap;
+    }
+    header h1 { margin: 0; font-size: 1.1rem; }
+    #updated { font-size: 0.85rem; color: #9fb0d9; }
+    main { flex: 1; display: flex; min-height: 0; }
+    aside {
+      width: 320px; padding: 14px; overflow-y: auto;
+      background: #121a33; border-right: 1px solid #243055;
+    }
+    arcgis-map { flex: 1; min-width: 0; }
+    label { display: block; font-size: 0.85rem; margin: 10px 0 4px; color: #9fb0d9; }
+    input[type="search"] {
+      width: 100%; padding: 8px; border-radius: 6px;
+      border: 1px solid #243055; background: #0b1020; color: inherit;
+    }
+    input[type="range"] { width: 100%; }
+    h2 { font-size: 0.95rem; margin: 18px 0 6px; }
+    ol#top { list-style: none; margin: 0; padding: 0; }
+    ol#top li button {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      gap: 8px; padding: 8px 10px; margin-bottom: 4px; text-align: left;
+      background: #0b1020; color: inherit; border: 1px solid #243055;
+      border-radius: 6px; cursor: pointer; font: inherit;
+    }
+    ol#top li button:hover { border-color: #6c8cff; }
+    .name small { display: block; color: #9fb0d9; font-size: 0.75rem; }
+    .badge { min-width: 38px; text-align: center; padding: 3px 6px; border-radius: 999px; color: #111; font-weight: 700; }
+    .legend-bar { height: 12px; border-radius: 6px; background: linear-gradient(90deg, #d73027, #fee08b, #1a9850); }
+    .legend-labels { display: flex; justify-content: space-between; font-size: 0.75rem; color: #9fb0d9; margin-top: 2px; }
+    .note { font-size: 0.75rem; color: #9fb0d9; margin-top: 18px; line-height: 1.4; }
+    .note a { color: #8fb0ff; }
+    #empty { font-size: 0.85rem; color: #9fb0d9; }
+    @media (max-width: 760px) {
+      main { flex-direction: column-reverse; }
+      aside { width: 100%; max-height: 42%; border-right: 0; border-top: 1px solid #243055; }
+      arcgis-map { min-height: 240px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Look Up LA</h1>
+    <span id="updated">Loading...</span>
+  </header>
+
+  <main>
+    <aside>
+      <label for="search">Search sites</label>
+      <input id="search" type="search" placeholder="e.g. Joshua Tree" />
+
+      <label for="minScore">Minimum score: <strong id="minScoreText">0</strong></label>
+      <input id="minScore" type="range" min="0" max="100" step="5" value="0" />
+
+      <h2>Top 10 tonight</h2>
+      <ol id="top"></ol>
+      <p id="empty" hidden>No sites match.</p>
+
+      <h2>Score legend</h2>
+      <div class="legend-bar"></div>
+      <div class="legend-labels"><span>0 poor</span><span>50</span><span>100 great</span></div>
+
+      <p class="note">
+        Score = darkness x clear sky x low haze x moon. Scored for 9 pm to 3 am.
+        Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC BY 4.0).
+        Light pollution: Falchi et al. 2016 (CC BY-NC 4.0). Elevation: Copernicus via Open-Meteo.
+        Check access rules and road conditions before you go.
+      </p>
+    </aside>
+
+    <arcgis-map basemap="dark-gray-vector" center="-117.8, 34.2" zoom="8">
+      <arcgis-popup slot="popup"></arcgis-popup>
+    </arcgis-map>
+  </main>
+
+  <script type="module">
+    const DATA_URL = "data/tonight.geojson";
+    const REFRESH_MINUTES = 10;
+
+    let sites = [];      // plain list of site properties + coordinates
+    let layer = null;    // the map layer (stays null if the map fails to load)
+    let mapView = null;
+
+    // ---------- helpers ----------
+    function scoreColor(score) {
+      // same 3 colors as the legend: red -> yellow -> green
+      const stops = [[0, [215, 48, 39]], [50, [254, 224, 139]], [100, [26, 152, 80]]];
+      const s = Math.min(Math.max(score, 0), 100);
+      const [a, b] = s <= 50 ? [stops[0], stops[1]] : [stops[1], stops[2]];
+      const t = (s - a[0]) / (b[0] - a[0]);
+      const rgb = a[1].map((v, i) => Math.round(v + (b[1][i] - v) * t));
+      return `rgb(${rgb.join(",")})`;
+    }
+
+    function timeAgo(iso) {
+      const minutes = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+      if (minutes < 1) return "just now";
+      if (minutes < 60) return `${minutes} min ago`;
+      const hours = Math.round(minutes / 60);
+      if (hours < 48) return `${hours} h ago`;
+      return `${Math.round(hours / 24)} days ago`;
+    }
+
+    function escapeSql(text) {
+      return text.replace(/'/g, "''").replace(/[%_]/g, "");
+    }
+
+    // ---------- data for the side panel ----------
+    async function loadSites() {
+      const response = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const geojson = await response.json();
+      sites = geojson.features.map((f) => ({
+        ...f.properties,
+        lon: f.geometry.coordinates[0],
+        lat: f.geometry.coordinates[1],
+      }));
+      const updated = sites.length ? sites[0].updated : null;
+      const label = document.getElementById("updated");
+      label.textContent = updated ? `Updated ${timeAgo(updated)}` : "No data yet";
+      label.dataset.iso = updated || "";
+      renderList();
+    }
+
+    function currentFilter() {
+      return {
+        text: document.getElementById("search").value.trim().toLowerCase(),
+        min: Number(document.getElementById("minScore").value),
+      };
+    }
+
+    function renderList() {
+      const { text, min } = currentFilter();
+      const shown = sites
+        .filter((s) => s.score >= min && s.name.toLowerCase().includes(text))
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 10);
+
+      const list = document.getElementById("top");
+      list.replaceChildren();
+      for (const site of shown) {
+        const item = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+
+        const name = document.createElement("span");
+        name.className = "name";
+        name.textContent = site.name;
+        const area = document.createElement("small");
+        area.textContent = `${site.area} · cloud ${site.cloud}%`;
+        name.append(area);
+
+        const badge = document.createElement("span");
+        badge.className = "badge";
+        badge.textContent = site.score;
+        badge.style.background = scoreColor(site.score);
+
+        button.append(name, badge);
+        button.addEventListener("click", () => focusSite(site));
+        item.append(button);
+        list.append(item);
+      }
+      document.getElementById("empty").hidden = shown.length > 0;
+    }
+
+    // ---------- map ----------
+    async function focusSite(site) {
+      if (!mapView) return;
+      await mapView.goTo({ center: [site.lon, site.lat], zoom: 11 });
+      const result = await layer.queryFeatures({
+        where: `id = ${Number(site.id)}`,
+        outFields: ["*"],
+        returnGeometry: true,
+      });
+      if (result.features.length) {
+        mapView.openPopup({ features: result.features, location: result.features[0].geometry });
+      }
+    }
+
+    function applyMapFilter() {
+      if (!layer) return;
+      const { text, min } = currentFilter();
+      const parts = [`score >= ${min}`];
+      if (text) parts.push(`LOWER(name) LIKE '%${escapeSql(text)}%'`);
+      layer.definitionExpression = parts.join(" AND ");
+    }
+
+    async function setUpMap() {
+      const GeoJSONLayer = await $arcgis.import("@arcgis/core/layers/GeoJSONLayer.js");
+
+      layer = new GeoJSONLayer({
+        url: DATA_URL,
+        title: "Tonight's stargazing score",
+        copyright: "Open-Meteo.com, Falchi et al. 2016",
+        refreshInterval: REFRESH_MINUTES,
+        orderBy: { field: "score" },   // best sites draw on top
+        renderer: {
+          type: "simple",
+          symbol: {
+            type: "simple-marker",
+            size: 14,
+            outline: { color: "white", width: 1 },
+          },
+          visualVariables: [{
+            type: "color",
+            field: "score",
+            stops: [
+              { value: 0, color: "#d73027" },
+              { value: 50, color: "#fee08b" },
+              { value: 100, color: "#1a9850" },
+            ],
+          }],
+        },
+        popupTemplate: {
+          title: "{name}",
+          content: [{
+            type: "fields",
+            fieldInfos: [
+              { fieldName: "score", label: "Tonight's score (0-100)" },
+              { fieldName: "area", label: "Area" },
+              { fieldName: "elevation_m", label: "Elevation (m)" },
+              { fieldName: "cloud", label: "Cloud cover (%)" },
+              { fieldName: "humidity", label: "Humidity (%)" },
+              { fieldName: "moon_illum", label: "Moon lit (%)" },
+              { fieldName: "dark", label: "Darkness (0-1)" },
+            ],
+          }],
+        },
+      });
+
+      const element = document.querySelector("arcgis-map");
+      await element.viewOnReady();
+      mapView = element;
+      element.map.add(layer);
+    }
+
+    // ---------- wire up the controls ----------
+    document.getElementById("search").addEventListener("input", () => {
+      renderList();
+      applyMapFilter();
+    });
+    document.getElementById("minScore").addEventListener("input", (event) => {
+      document.getElementById("minScoreText").textContent = event.target.value;
+      renderList();
+      applyMapFilter();
+    });
+
+    // keep "Updated X ago" fresh, and reload data every few minutes
+    setInterval(() => {
+      const label = document.getElementById("updated");
+      if (label.dataset.iso) label.textContent = `Updated ${timeAgo(label.dataset.iso)}`;
+    }, 60 * 1000);
+    setInterval(() => loadSites().catch(console.error), REFRESH_MINUTES * 60 * 1000);
+
+    // go
+    loadSites().catch((err) => {
+      document.getElementById("updated").textContent = "Could not load data";
+      console.error(err);
+    });
+    setUpMap().catch((err) => console.error("Map failed to load:", err));
+  </script>
+</body>
+</html>

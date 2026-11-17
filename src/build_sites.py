@@ -7,6 +7,8 @@ import json
 from pathlib import Path
 
 # (name, latitude, longitude, area)
+#List of candidate sites, with their location data
+
 SITES = [
     # Near LA: Angeles National Forest and nearby mountains
     ("Chilao Visitor Center", 34.3359, -118.0121, "Angeles National Forest"),
@@ -37,25 +39,25 @@ SITES = [
     ("Magic Portal Stargazer's Retreat", 34.75583111481551, -118.36629460025274, "Mojave Desert"),
 ]
 
-# Rough box around Southern California, used to catch typos
+# Rough box around Southern California, used to ensure locations are within correct lat and long
 LAT_MIN, LAT_MAX = 32.0, 36.0
 LON_MIN, LON_MAX = -121.0, -114.5
 
 
 def build_features(sites):
-    seen = set()
-    features = []
+    seen = set()  #Tracks site names to catch duplicates
+    features = [] #Stores GeoJSON features for each site
     for name, lat, lon, area in sites:
         if name in seen:
-            raise ValueError(f"Duplicate site name: {name}")
-        seen.add(name)
+            raise ValueError(f"Duplicate site name: {name}") #Raises an error if duplicate site detected
+        seen.add(name) #Adds site name to the set
         if not (LAT_MIN <= lat <= LAT_MAX and LON_MIN <= lon <= LON_MAX):
             raise ValueError(
-                f"{name}: ({lat}, {lon}) is outside the study area. "
+                f"{name}: ({lat}, {lon}) is outside the boundaries" #Raises an error if location is outside boundaries
             )
-        features.append({
+        features.append({  #Adds GeoJSON feature for the site 
             "type": "Feature",
-            # GeoJSON order is [longitude, latitude]
+            # [longitude, latitude]
             "geometry": {"type": "Point", "coordinates": [lon, lat]},
             "properties": {
                 "id": len(features) + 1,
@@ -68,11 +70,11 @@ def build_features(sites):
 
 
 def main():
-    out_path = Path(__file__).resolve().parent.parent / "data" / "sites_candidates.geojson"
-    features = build_features(SITES)
-    collection = {"type": "FeatureCollection", "features": features}
-    out_path.write_text(json.dumps(collection, indent=2), encoding="utf-8")
-    print(f"Wrote {len(features)} sites to {out_path}")
+    out_path = Path(__file__).resolve().parent.parent / "data" / "sites_candidates.geojson" #Saves file path for the output GeoJSON
+    features = build_features(SITES) #Stores GeoJSON features from the list of sites
+    collection = {"type": "FeatureCollection", "features": features} #Creates GeoJSON feature collection
+    out_path.write_text(json.dumps(collection, indent=2), encoding="utf-8") #Converts collection to JSON and write to file
+    print(f"Wrote {len(features)} sites to {out_path}") #Prints the number of sites written and the output file path 
 
 
 if __name__ == "__main__":
