@@ -16,11 +16,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 1696.4,
         "dark": 0.707,
-        "score": 3,
-        "cloud": 90,
-        "humidity": 99,
+        "score": 1,
+        "cloud": 98,
+        "humidity": 98,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -38,11 +38,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 2595.4,
         "dark": 0.762,
-        "score": 1,
-        "cloud": 98,
-        "humidity": 92,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 94,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -62,9 +62,9 @@
         "dark": 0.772,
         "score": 0,
         "cloud": 100,
-        "humidity": 90,
+        "humidity": 96,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -82,11 +82,11 @@
         "area": "Mt. Baldy",
         "elevation_m": 1362.4,
         "dark": 0.65,
-        "score": 4,
-        "cloud": 84,
-        "humidity": 83,
+        "score": 3,
+        "cloud": 88,
+        "humidity": 87,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -106,9 +106,9 @@
         "dark": 0.782,
         "score": 0,
         "cloud": 100,
-        "humidity": 58,
+        "humidity": 60,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -126,11 +126,11 @@
         "area": "Santa Monica Mountains",
         "elevation_m": 776.9,
         "dark": 0.686,
-        "score": 1,
-        "cloud": 96,
-        "humidity": 83,
+        "score": 2,
+        "cloud": 95,
+        "humidity": 81,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -150,9 +150,9 @@
         "dark": 0.947,
         "score": 0,
         "cloud": 100,
-        "humidity": 96,
+        "humidity": 97,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -174,7 +174,7 @@
         "cloud": 100,
         "humidity": 99,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -194,9 +194,9 @@
         "dark": 0.913,
         "score": 0,
         "cloud": 100,
-        "humidity": 77,
+        "humidity": 74,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -216,9 +216,9 @@
         "dark": 0.844,
         "score": 0,
         "cloud": 100,
-        "humidity": 74,
+        "humidity": 70,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -236,11 +236,11 @@
         "area": "San Jacinto Mountains",
         "elevation_m": 1837.5,
         "dark": 0.843,
-        "score": 5,
-        "cloud": 88,
-        "humidity": 42,
+        "score": 10,
+        "cloud": 76,
+        "humidity": 47,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -262,7 +262,7 @@
         "cloud": 100,
         "humidity": 99,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -282,9 +282,9 @@
         "dark": 0.933,
         "score": 0,
         "cloud": 100,
-        "humidity": 91,
+        "humidity": 92,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -304,9 +304,9 @@
         "dark": 0.951,
         "score": 0,
         "cloud": 100,
-        "humidity": 85,
+        "humidity": 79,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -324,11 +324,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 2079.6,
         "dark": 0.945,
-        "score": 19,
-        "cloud": 53,
-        "humidity": 87,
+        "score": 13,
+        "cloud": 69,
+        "humidity": 88,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -346,11 +346,11 @@
         "area": "Joshua Tree National Park",
         "elevation_m": 1566.4,
         "dark": 0.892,
-        "score": 5,
-        "cloud": 88,
-        "humidity": 54,
+        "score": 0,
+        "cloud": 100,
+        "humidity": 58,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -370,9 +370,9 @@
         "dark": 0.929,
         "score": 0,
         "cloud": 100,
-        "humidity": 56,
+        "humidity": 57,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -392,9 +392,9 @@
         "dark": 0.946,
         "score": 0,
         "cloud": 100,
-        "humidity": 42,
+        "humidity": 46,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -414,9 +414,9 @@
         "dark": 0.968,
         "score": 0,
         "cloud": 100,
-        "humidity": 46,
+        "humidity": 48,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -436,9 +436,9 @@
         "dark": 0.953,
         "score": 0,
         "cloud": 100,
-        "humidity": 44,
+        "humidity": 43,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -458,9 +458,9 @@
         "dark": 0.934,
         "score": 0,
         "cloud": 100,
-        "humidity": 44,
+        "humidity": 45,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -480,9 +480,9 @@
         "dark": 0.961,
         "score": 0,
         "cloud": 100,
-        "humidity": 75,
+        "humidity": 71,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     },
     {
@@ -502,9 +502,9 @@
         "dark": 0.828,
         "score": 0,
         "cloud": 100,
-        "humidity": 80,
+        "humidity": 79,
         "moon_illum": 68,
-        "updated": "2026-11-18T21:40:51+00:00"
+        "updated": "2026-11-19T00:43:28+00:00"
       }
     }
   ]
