@@ -16,11 +16,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 1696.4,
         "dark": 0.707,
-        "score": 2,
-        "cloud": 93,
-        "humidity": 98,
+        "score": 4,
+        "cloud": 86,
+        "humidity": 96,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -38,11 +38,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 2595.4,
         "dark": 0.762,
-        "score": 1,
-        "cloud": 98,
-        "humidity": 92,
+        "score": 10,
+        "cloud": 69,
+        "humidity": 88,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -61,10 +61,10 @@
         "elevation_m": 2093.3,
         "dark": 0.772,
         "score": 0,
-        "cloud": 100,
+        "cloud": 99,
         "humidity": 90,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -82,11 +82,11 @@
         "area": "Mt. Baldy",
         "elevation_m": 1362.4,
         "dark": 0.65,
-        "score": 7,
-        "cloud": 74,
-        "humidity": 85,
+        "score": 12,
+        "cloud": 60,
+        "humidity": 77,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -104,11 +104,11 @@
         "area": "Antelope Valley",
         "elevation_m": 1397.0,
         "dark": 0.782,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 55,
+        "score": 1,
+        "cloud": 97,
+        "humidity": 49,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -130,7 +130,7 @@
         "cloud": 100,
         "humidity": 83,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -150,9 +150,9 @@
         "dark": 0.947,
         "score": 0,
         "cloud": 100,
-        "humidity": 98,
+        "humidity": 97,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -172,9 +172,9 @@
         "dark": 0.974,
         "score": 0,
         "cloud": 100,
-        "humidity": 99,
+        "humidity": 98,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -193,10 +193,10 @@
         "elevation_m": 800.3,
         "dark": 0.913,
         "score": 2,
-        "cloud": 95,
-        "humidity": 78,
+        "cloud": 94,
+        "humidity": 72,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -214,11 +214,11 @@
         "area": "Antelope Valley",
         "elevation_m": 786.3,
         "dark": 0.844,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 70,
+        "score": 4,
+        "cloud": 91,
+        "humidity": 67,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -236,11 +236,11 @@
         "area": "San Jacinto Mountains",
         "elevation_m": 1837.5,
         "dark": 0.843,
-        "score": 5,
-        "cloud": 89,
-        "humidity": 25,
+        "score": 12,
+        "cloud": 73,
+        "humidity": 36,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -258,11 +258,11 @@
         "area": "Palomar Mountain",
         "elevation_m": 1365.1,
         "dark": 0.875,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 90,
+        "score": 4,
+        "cloud": 90,
+        "humidity": 91,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -280,11 +280,11 @@
         "area": "Cuyamaca Rancho State Park",
         "elevation_m": 1376.5,
         "dark": 0.933,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 80,
+        "score": 7,
+        "cloud": 84,
+        "humidity": 74,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -302,11 +302,11 @@
         "area": "Cleveland National Forest",
         "elevation_m": 1809.2,
         "dark": 0.951,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 59,
+        "score": 7,
+        "cloud": 86,
+        "humidity": 56,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -324,11 +324,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 2079.6,
         "dark": 0.945,
-        "score": 6,
-        "cloud": 85,
-        "humidity": 92,
+        "score": 8,
+        "cloud": 81,
+        "humidity": 93,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -346,11 +346,11 @@
         "area": "Joshua Tree National Park",
         "elevation_m": 1566.4,
         "dark": 0.892,
-        "score": 3,
-        "cloud": 92,
+        "score": 5,
+        "cloud": 89,
         "humidity": 64,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -370,9 +370,9 @@
         "dark": 0.929,
         "score": 0,
         "cloud": 100,
-        "humidity": 54,
+        "humidity": 53,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -392,9 +392,9 @@
         "dark": 0.946,
         "score": 0,
         "cloud": 100,
-        "humidity": 49,
+        "humidity": 50,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -413,10 +413,10 @@
         "elevation_m": 938.2,
         "dark": 0.968,
         "score": 0,
-        "cloud": 100,
+        "cloud": 99,
         "humidity": 52,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -434,11 +434,11 @@
         "area": "Anza-Borrego Desert State Park",
         "elevation_m": 409.5,
         "dark": 0.953,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 40,
+        "score": 1,
+        "cloud": 97,
+        "humidity": 37,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -456,11 +456,11 @@
         "area": "Anza-Borrego Desert State Park",
         "elevation_m": 234.9,
         "dark": 0.934,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 42,
+        "score": 2,
+        "cloud": 95,
+        "humidity": 37,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -478,11 +478,11 @@
         "area": "Borrego Springs",
         "elevation_m": 774.9,
         "dark": 0.961,
-        "score": 4,
-        "cloud": 91,
-        "humidity": 60,
+        "score": 16,
+        "cloud": 66,
+        "humidity": 56,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     },
     {
@@ -502,9 +502,9 @@
         "dark": 0.828,
         "score": 0,
         "cloud": 100,
-        "humidity": 79,
+        "humidity": 77,
         "moon_illum": 68,
-        "updated": "2026-11-19T06:52:07+00:00"
+        "updated": "2026-11-19T09:49:11+00:00"
       }
     }
   ]
