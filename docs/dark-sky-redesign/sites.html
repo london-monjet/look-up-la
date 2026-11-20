@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All sites | Dark Sky Finder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Dark Sky Finder</a>
+    <nav class="nav">
+      <a href="index.html#map">Map</a>
+      <a href="sites.html" aria-current="page">Sites</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>All sites</h1>
+    <p class="lead" id="count">Loading...</p>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search by name or area" aria-label="Search sites" />
+      <select id="sort" aria-label="Sort sites">
+        <option value="score">Best tonight first</option>
+        <option value="name">A to Z</option>
+      </select>
+    </div>
+    <div class="chips" id="chips" style="margin-bottom:22px">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-filter="public" aria-pressed="false">Public</button>
+      <button class="chip" type="button" data-filter="restricted" aria-pressed="false">Private / Reservation</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <p class="hint" id="empty" hidden>No sites match.</p>
+  </main>
+
+  <script type="module">
+    import { loadSites, ACCESS_LABELS, photoStyle } from "./js/common.js";
+
+    let sites = [];
+    let filter = "all";
+
+    function render() {
+      const text = document.getElementById("search").value.trim().toLowerCase();
+      const sort = document.getElementById("sort").value;
+      const shown = sites
+        .filter((s) => filter === "all" || s.access === filter)
+        .filter((s) => (s.name + " " + s.area).toLowerCase().includes(text))
+        .sort((a, b) => sort === "name" ? a.name.localeCompare(b.name) : b.score - a.score);
+
+      const grid = document.getElementById("grid");
+      grid.replaceChildren();
+      for (const site of shown) {
+        const card = document.createElement("a");
+        card.className = "card";
+        card.href = `site.html?id=${encodeURIComponent(site.id)}`;
+
+        const photo = document.createElement("div");
+        photo.className = "photo";
+        if (site.image) photo.style.backgroundImage = photoStyle(site);
+        else photo.classList.add("placeholder-img");
+
+        const tag = document.createElement("span");
+        tag.className = "access-tag";
+        tag.dataset.access = site.access;
+        tag.textContent = ACCESS_LABELS[site.access];
+        photo.append(tag);
+
+        const body = document.createElement("div");
+        body.className = "body";
+        const name = document.createElement("h2");
+        name.textContent = site.name;
+        const area = document.createElement("p");
+        area.textContent = site.area;
+        body.append(name, area);
+
+        card.append(photo, body);
+        grid.append(card);
+      }
+      document.getElementById("empty").hidden = shown.length > 0;
+      document.getElementById("count").textContent =
+        `${shown.length} of ${sites.length} sites`;
+    }
+
+    document.getElementById("search").addEventListener("input", render);
+    document.getElementById("sort").addEventListener("change", render);
+    document.getElementById("chips").addEventListener("click", (event) => {
+      const chip = event.target.closest(".chip");
+      if (!chip) return;
+      filter = chip.dataset.filter;
+      for (const c of document.querySelectorAll(".chip")) {
+        c.setAttribute("aria-pressed", String(c === chip));
+      }
+      render();
+    });
+
+    loadSites()
+      .then((list) => { sites = list; render(); })
+      .catch((err) => {
+        document.getElementById("count").textContent = "Could not load the sites.";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

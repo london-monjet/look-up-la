@@ -1,0 +1,213 @@
+/* Dark Sky Finder: shared styles (all pages) */
+@font-face {
+  font-family: "Redaction 50";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/redaction-50@latest/latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Redaction 50";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/redaction-50@latest/latin-700-normal.woff2") format("woff2");
+}
+
+:root {
+  --blue: #141852;        /* rgb(20, 24, 82): header and accents */
+  --blue-line: #2b3190;   /* lighter blue for borders */
+  --black: #08090d;       /* near black: side panel and page backgrounds */
+  --ink: #0e0f16;         /* cards and inputs */
+  --text: #eceaf4;
+  --muted: #a8a6c4;
+  --accent: #b98bd0;      /* soft purple, picked from the legend colors */
+  --score-low: rgb(133, 89, 136);
+  --score-mid: rgb(72, 52, 117);
+  --score-high: rgb(20, 24, 82);
+  --header-h: 56px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Redaction 50", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  background: var(--black);
+  color: var(--text);
+  line-height: 1.4;
+}
+/* Regular weight everywhere; only .hero-title is bold */
+h1, h2, h3, h4, b, strong, th { font-weight: 400; }
+a { color: var(--accent); }
+button, input, select { font: inherit; color: inherit; }
+
+/* ---------- header ---------- */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  height: var(--header-h);
+  padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  background: var(--blue);
+  border-bottom: 1px solid var(--blue-line);
+}
+.brand { font-size: 1.35rem; color: var(--text); text-decoration: none; }
+.nav { display: flex; align-items: center; gap: 22px; }
+.nav a { color: var(--muted); text-decoration: none; font-size: 1.1rem; padding: 4px 0; border-bottom: 1px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--text); border-bottom-color: var(--accent); }
+#updated { font-size: 0.95rem; color: var(--muted); }
+
+/* ---------- shared bits ---------- */
+.badge {
+  min-width: 38px; text-align: center; padding: 3px 9px; border-radius: 999px;
+  color: #fff; border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.legend-bar {
+  height: 12px; border-radius: 6px;
+  background: linear-gradient(90deg, var(--score-low), var(--score-mid), var(--score-high));
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.legend-labels { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
+.access-tag {
+  padding: 3px 10px; border-radius: 999px; font-size: 0.85rem;
+  background: rgba(8, 9, 13, 0.78); border: 1px solid var(--blue-line); color: var(--text);
+  backdrop-filter: blur(4px);
+}
+.access-tag[data-access="public"] { border-color: #6fbf8e; }
+.access-tag[data-access="restricted"] { border-color: var(--accent); }
+.placeholder-img {
+  background:
+    radial-gradient(1.2px 1.2px at 20% 30%, #fff, transparent 60%),
+    radial-gradient(1px 1px at 70% 20%, #fff, transparent 60%),
+    radial-gradient(1.4px 1.4px at 45% 65%, #fff, transparent 60%),
+    radial-gradient(1px 1px at 85% 75%, #fff, transparent 60%),
+    linear-gradient(160deg, var(--blue), #2a1d52 60%, #3b2650);
+}
+.back { display: inline-block; margin-bottom: 16px; color: var(--muted); text-decoration: none; font-size: 1.1rem; }
+.back:hover { color: var(--text); }
+
+/* ---------- hero (index) ---------- */
+html.snap { scroll-snap-type: y proximity; }
+.hero {
+  position: relative; min-height: 100svh; overflow: hidden;
+  display: grid; place-items: center; text-align: center; padding: 80px 20px;
+  scroll-snap-align: start;
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(185, 139, 208, 0.35), transparent 60%),
+    url("../images/hero.jpg") center / cover no-repeat,   /* optional: drop your own photo in docs/images/hero.jpg */
+    linear-gradient(180deg, #03040c 0%, #0a0c2e 55%, var(--blue) 100%);
+}
+.stars { position: absolute; inset: 0; pointer-events: none; }
+.star {
+  position: absolute; border-radius: 50%; background: #fff;
+  animation: twinkle var(--d, 4s) ease-in-out var(--delay, 0s) infinite;
+}
+@keyframes twinkle { 0%, 100% { opacity: 0.15; } 50% { opacity: 1; } }
+.hero-inner { position: relative; animation: rise 1.4s ease-out both; }
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+.hero-title { font-weight: 700; font-size: clamp(3rem, 11vw, 8.5rem); line-height: 0.95; margin: 0; letter-spacing: -0.01em; }
+.hero-sub { font-size: clamp(1.1rem, 2.4vw, 1.6rem); color: var(--muted); margin: 18px 0 0; }
+.scroll-cue {
+  position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  color: var(--text); text-decoration: none; font-size: 1rem; letter-spacing: 0.12em; text-transform: uppercase;
+  transition: opacity 0.4s;
+}
+.scroll-cue .line { width: 1px; height: 46px; background: linear-gradient(var(--text), transparent); animation: drip 2s ease-in-out infinite; transform-origin: top; }
+.scroll-cue .arrow { width: 12px; height: 12px; border-right: 1px solid var(--text); border-bottom: 1px solid var(--text); transform: rotate(45deg); animation: bob 1.6s ease-in-out infinite; }
+@keyframes drip { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(1); opacity: 0; } }
+@keyframes bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 8px; } }
+.scroll-cue.gone { opacity: 0; pointer-events: none; }
+
+/* ---------- map section (index) ---------- */
+#map {
+  height: 100svh; padding-top: var(--header-h);
+  display: flex; min-height: 0; scroll-snap-align: start;
+}
+aside {
+  width: 330px; padding: 16px; overflow-y: auto;
+  background: var(--black); border-right: 1px solid var(--blue-line);
+}
+arcgis-map { flex: 1; min-width: 0; }
+label { display: block; font-size: 1rem; margin: 10px 0 4px; color: var(--muted); }
+input[type="search"], select {
+  width: 100%; padding: 8px 10px; border-radius: 6px;
+  border: 1px solid var(--blue-line); background: var(--ink);
+}
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+aside h2 { font-size: 1.15rem; margin: 20px 0 6px; }
+ol#top { list-style: none; margin: 0; padding: 0; }
+ol#top li button {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  gap: 8px; padding: 8px 10px; margin-bottom: 4px; text-align: left;
+  background: var(--ink); border: 1px solid var(--blue-line);
+  border-radius: 6px; cursor: pointer;
+}
+ol#top li button:hover { border-color: var(--accent); }
+.name small { display: block; color: var(--muted); font-size: 0.85rem; }
+.note { font-size: 0.85rem; color: var(--muted); margin-top: 20px; line-height: 1.4; }
+#empty { color: var(--muted); }
+
+/* ---------- sites page ---------- */
+.page { padding: calc(var(--header-h) + 28px) 20px 60px; max-width: 1200px; margin: 0 auto; }
+.page h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 0 0 6px; }
+.page .lead { color: var(--muted); margin: 0 0 20px; }
+.toolbar { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 22px; }
+.toolbar input[type="search"] { flex: 1 1 240px; width: auto; }
+.toolbar select { width: auto; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip {
+  padding: 7px 14px; border-radius: 999px; cursor: pointer;
+  background: var(--ink); border: 1px solid var(--blue-line);
+}
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed="true"] { background: var(--blue); border-color: var(--accent); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+.card {
+  display: block; color: inherit; text-decoration: none; overflow: hidden;
+  background: var(--ink); border: 1px solid var(--blue-line); border-radius: 12px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.card:hover, .card:focus-visible { transform: translateY(-4px); border-color: var(--accent); outline: none; }
+.card .photo { position: relative; aspect-ratio: 4 / 3; background-size: cover; background-position: center; }
+.card .access-tag { position: absolute; top: 10px; right: 10px; }
+.card .body { padding: 12px 14px 14px; }
+.card h2 { font-size: 1.3rem; margin: 0; }
+.card p { margin: 2px 0 0; color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- detail page ---------- */
+.detail { display: grid; grid-template-columns: 1.7fr 1fr; gap: 28px; align-items: start; }
+.viewer {
+  position: relative; aspect-ratio: 16 / 10; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--blue-line); background: var(--ink);
+}
+.viewer iframe, .viewer .photo-view { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.photo-view { background-size: cover; background-position: center; }
+.viewer-tabs { display: flex; gap: 8px; margin: 10px 0; }
+.detail h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 14px 0 8px; }
+.detail .meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; color: var(--muted); }
+.detail .access-tag { backdrop-filter: none; }
+.facts { background: var(--ink); border: 1px solid var(--blue-line); border-radius: 12px; padding: 18px; }
+.facts .big { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+.facts .big .badge { font-size: 2rem; padding: 4px 18px; }
+dl { margin: 0; }
+.row { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-top: 1px solid var(--blue-line); }
+.row dt { color: var(--muted); }
+.row dd { margin: 0; text-align: right; }
+.facts .links { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
+.hint { font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- phones ---------- */
+@media (max-width: 760px) {
+  .site-header { padding: 0 12px; }
+  .nav { gap: 14px; }
+  #map { flex-direction: column-reverse; }
+  aside { width: 100%; max-height: 42%; border-right: 0; border-top: 1px solid var(--blue-line); }
+  arcgis-map { min-height: 240px; }
+  .detail { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}

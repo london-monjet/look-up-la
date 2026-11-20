@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" class="snap">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark Sky Finder: Southern California</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module" src="https://js.arcgis.com/5.1/"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Dark Sky Finder</a>
+    <nav class="nav">
+      <a href="#map" aria-current="page">Map</a>
+      <a href="sites.html">Sites</a>
+      <span id="updated">Loading...</span>
+    </nav>
+  </header>
+
+  <!-- Page 1: title screen -->
+  <section class="hero" id="top-of-page">
+    <div class="stars" id="stars"></div>
+    <div class="hero-inner">
+      <h1 class="hero-title">Dark Sky Finder</h1>
+      <p class="hero-sub">Where to see the stars tonight, Southern California</p>
+    </div>
+    <a class="scroll-cue" id="cue" href="#map" aria-label="Scroll to the map">
+      <span>Scroll</span><span class="line"></span><span class="arrow"></span>
+    </a>
+  </section>
+
+  <!-- Page 2: the map -->
+  <section id="map">
+    <aside>
+      <label for="search">Search sites</label>
+      <input id="search" type="search" placeholder="e.g. Keys View" />
+
+      <label for="minScore">Minimum score: <strong id="minScoreText">0</strong></label>
+      <input id="minScore" type="range" min="0" max="100" step="5" value="0" />
+
+      <h2>Top 10 tonight</h2>
+      <ol id="top"></ol>
+      <p id="empty" hidden>No sites match.</p>
+
+      <h2>Score legend</h2>
+      <div class="legend-bar"></div>
+      <div class="legend-labels"><span>0 poor</span><span>50</span><span>100 great</span></div>
+
+      <p class="note">
+        Score = darkness x clear sky x low haze x moon. Scored for 9 pm to 3 am.
+        Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC BY 4.0).
+        Light pollution: Falchi et al. 2016 (CC BY-NC 4.0). Elevation: Copernicus via Open-Meteo.
+        Check access rules and road conditions before you go.
+      </p>
+    </aside>
+
+    <arcgis-map basemap="dark-gray-vector" center="-117.8, 34.2" zoom="8">
+      <arcgis-popup slot="popup"></arcgis-popup>
+    </arcgis-map>
+  </section>
+
+  <script type="module">
+    import { DATA_URL, loadSites, scoreColor, timeAgo } from "./js/common.js";
+
+    const REFRESH_MINUTES = 10;
+    let sites = [];
+    let layer = null;
+    let mapView = null;
+
+    // ---------- title screen: twinkling stars + scroll cue ----------
+    const starBox = document.getElementById("stars");
+    for (let i = 0; i < 130; i++) {
+      const star = document.createElement("span");
+      star.className = "star";
+      const size = Math.random() * 2 + 0.6;
+      star.style.cssText =
+        `left:${Math.random() * 100}%;top:${Math.random() * 100}%;` +
+        `width:${size}px;height:${size}px;` +
+        `--d:${3 + Math.random() * 4}s;--delay:${Math.random() * 4}s;`;
+      starBox.append(star);
+    }
+    const cue = document.getElementById("cue");
+    window.addEventListener("scroll", () => {
+      cue.classList.toggle("gone", window.scrollY > 40);
+    }, { passive: true });
+
+    // ---------- side panel ----------
+    function currentFilter() {
+      return {
+        text: document.getElementById("search").value.trim().toLowerCase(),
+        min: Number(document.getElementById("minScore").value),
+      };
+    }
+
+    function renderList() {
+      const { text, min } = currentFilter();
+      const shown = sites
+        .filter((s) => s.score >= min && s.name.toLowerCase().includes(text))
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 10);
+
+      const list = document.getElementById("top");
+      list.replaceChildren();
+      for (const site of shown) {
+        const item = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+
+        const name = document.createElement("span");
+        name.className = "name";
+        name.textContent = site.name;
+        const area = document.createElement("small");
+        area.textContent = `${site.area} · cloud ${site.cloud}%`;
+        name.append(area);
+
+        const badge = document.createElement("span");
+        badge.className = "badge";
+        badge.textContent = site.score;
+        badge.style.background = scoreColor(site.score);
+
+        button.append(name, badge);
+        button.addEventListener("click", () => focusSite(site));
+        item.append(button);
+        list.append(item);
+      }
+      document.getElementById("empty").hidden = shown.length > 0;
+    }
+
+    function setUpdatedLabel() {
+      const label = document.getElementById("updated");
+      const iso = sites.length ? sites[0].updated : "";
+      label.dataset.iso = iso;
+      label.textContent = iso ? `Updated ${timeAgo(iso)}` : "No data yet";
+    }
+
+    async function refreshSites() {
+      sites = await loadSites();
+      setUpdatedLabel();
+      renderList();
+    }
+
+    // ---------- map ----------
+    async function focusSite(site) {
+      document.getElementById("map").scrollIntoView({ behavior: "smooth" });
+      if (!mapView) return;
+      await mapView.goTo({ center: [site.lon, site.lat], zoom: 11 });
+      const result = await layer.queryFeatures({
+        where: `id = ${Number(site.id)}`,
+        outFields: ["*"],
+        returnGeometry: true,
+      });
+      if (result.features.length) {
+        mapView.openPopup({ features: result.features, location: result.features[0].geometry });
+      }
+    }
+
+    function escapeSql(text) {
+      return text.replace(/'/g, "''").replace(/[%_]/g, "");
+    }
+
+    function applyMapFilter() {
+      if (!layer) return;
+      const { text, min } = currentFilter();
+      const parts = [`score >= ${min}`];
+      if (text) parts.push(`LOWER(name) LIKE '%${escapeSql(text)}%'`);
+      layer.definitionExpression = parts.join(" AND ");
+    }
+
+    // A box around all the sites (plus a margin) that the map may not leave.
+    function boundsOfSites() {
+      const pad = 0.6; // degrees of breathing room
+      const lons = sites.map((s) => s.lon);
+      const lats = sites.map((s) => s.lat);
+      return {
+        type: "extent",
+        xmin: Math.min(...lons) - pad, xmax: Math.max(...lons) + pad,
+        ymin: Math.min(...lats) - pad, ymax: Math.max(...lats) + pad,
+        spatialReference: { wkid: 4326 },
+      };
+    }
+
+    async function setUpMap() {
+      const GeoJSONLayer = await $arcgis.import("@arcgis/core/layers/GeoJSONLayer.js");
+
+      layer = new GeoJSONLayer({
+        url: DATA_URL,
+        title: "Tonight's stargazing score",
+        copyright: "Open-Meteo.com, Falchi et al. 2016",
+        refreshInterval: REFRESH_MINUTES,
+        orderBy: { field: "score" },
+        renderer: {
+          type: "simple",
+          symbol: {
+            type: "simple-marker",
+            size: 16,
+            outline: { color: "white", width: 1.5 },
+          },
+          visualVariables: [{
+            type: "color",
+            field: "score",
+            stops: [
+              { value: 0, color: [133, 89, 136] },
+              { value: 50, color: [72, 52, 117] },
+              { value: 100, color: [20, 24, 82] },
+            ],
+          }],
+        },
+        popupTemplate: {
+          title: "{name}",
+          content: [
+            {
+              type: "fields",
+              fieldInfos: [
+                { fieldName: "score", label: "Tonight's score (0-100)" },
+                { fieldName: "area", label: "Area" },
+                { fieldName: "elevation_m", label: "Elevation (m)" },
+                { fieldName: "cloud", label: "Cloud cover (%)" },
+                { fieldName: "humidity", label: "Humidity (%)" },
+                { fieldName: "moon_illum", label: "Moon lit (%)" },
+              ],
+            },
+            { type: "text", text: "<a href='site.html?id={id}'>View full details</a>" },
+          ],
+        },
+      });
+
+      const element = document.querySelector("arcgis-map");
+      await element.viewOnReady();
+      mapView = element;
+      element.map.add(layer);
+      if (sites.length) {
+        // Keep the map inside the area where the points are.
+        element.constraints = {
+          geometry: boundsOfSites(),
+          minZoom: 6,
+          rotationEnabled: false,
+        };
+      }
+    }
+
+    // ---------- controls and timers ----------
+    document.getElementById("search").addEventListener("input", () => { renderList(); applyMapFilter(); });
+    document.getElementById("minScore").addEventListener("input", (event) => {
+      document.getElementById("minScoreText").textContent = event.target.value;
+      renderList();
+      applyMapFilter();
+    });
+    setInterval(() => {
+      const label = document.getElementById("updated");
+      if (label.dataset.iso) label.textContent = `Updated ${timeAgo(label.dataset.iso)}`;
+    }, 60 * 1000);
+    setInterval(() => refreshSites().catch(console.error), REFRESH_MINUTES * 60 * 1000);
+
+    // go: load the data first (the map's boundary needs the site positions)
+    refreshSites()
+      .catch((err) => {
+        document.getElementById("updated").textContent = "Could not load data";
+        console.error(err);
+      })
+      .then(() => setUpMap())
+      .catch((err) => console.error("Map failed to load:", err));
+  </script>
+</body>
+</html>

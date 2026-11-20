@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site | Dark Sky Finder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Dark Sky Finder</a>
+    <nav class="nav">
+      <a href="index.html#map">Map</a>
+      <a href="sites.html" aria-current="page">Sites</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <a class="back" href="sites.html">&larr; All sites</a>
+    <div id="content"><p class="hint">Loading...</p></div>
+  </main>
+
+  <script type="module">
+    import { loadSites, ACCESS_LABELS, scoreColor, photoStyle } from "./js/common.js";
+
+    const content = document.getElementById("content");
+
+    function el(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+
+    function fact(list, label, value) {
+      const row = el("div", "row");
+      row.append(el("dt", "", label), el("dd", "", value));
+      list.append(row);
+    }
+
+    function show(site) {
+      document.title = `${site.name} | Dark Sky Finder`;
+      content.replaceChildren();
+      const layout = el("div", "detail");
+
+      // ----- left (larger) column: street view, name, access -----
+      const left = el("div");
+      const viewer = el("div", "viewer");
+      const streetView = document.createElement("iframe");
+      streetView.title = `Google Street View near ${site.name}`;
+      streetView.loading = "lazy";
+      streetView.referrerPolicy = "no-referrer-when-downgrade";
+      streetView.allowFullscreen = true;
+      streetView.src =
+        `https://www.google.com/maps?q=&layer=c&cbll=${Number(site.lat)},${Number(site.lon)}` +
+        `&cbp=11,0,0,0,0&output=svembed`;
+      viewer.append(streetView);
+
+      if (site.image) {
+        const tabs = el("div", "viewer-tabs");
+        const streetBtn = el("button", "chip", "Street View");
+        const photoBtn = el("button", "chip", "Photo");
+        streetBtn.type = photoBtn.type = "button";
+        streetBtn.setAttribute("aria-pressed", "true");
+        photoBtn.setAttribute("aria-pressed", "false");
+        const photoView = el("div", "photo-view");
+        photoView.style.backgroundImage = photoStyle(site);
+        photoView.hidden = true;
+        viewer.append(photoView);
+        const choose = (photo) => {
+          photoView.hidden = !photo;
+          streetView.hidden = photo;
+          photoBtn.setAttribute("aria-pressed", String(photo));
+          streetBtn.setAttribute("aria-pressed", String(!photo));
+        };
+        streetBtn.addEventListener("click", () => choose(false));
+        photoBtn.addEventListener("click", () => choose(true));
+        tabs.append(streetBtn, photoBtn);
+        left.append(tabs);
+      }
+      left.append(viewer);
+      left.append(el("h1", "", site.name));
+
+      const meta = el("div", "meta");
+      const tag = el("span", "access-tag", ACCESS_LABELS[site.access]);
+      tag.dataset.access = site.access;
+      meta.append(tag, el("span", "", site.area));
+      left.append(meta);
+
+      left.append(el("p", "hint",
+        "No imagery here? Remote spots often have no Street View. Use the Google Maps link to see satellite photos."));
+
+      // ----- right column: the numbers -----
+      const right = el("div", "facts");
+      const big = el("div", "big");
+      const badge = el("span", "badge", String(site.score));
+      badge.style.background = scoreColor(site.score);
+      big.append(badge, el("span", "", "tonight's score out of 100"));
+      right.append(big);
+
+      const list = document.createElement("dl");
+      fact(list, "Elevation", `${Math.round(site.elevation_m)} m (${Math.round(site.elevation_m * 3.281).toLocaleString()} ft)`);
+      fact(list, "Cloud cover", `${site.cloud}%`);
+      fact(list, "Humidity", `${site.humidity}%`);
+      fact(list, "Moon lit", `${site.moon_illum}%`);
+      fact(list, "Darkness (0-1)", String(site.dark));
+      fact(list, "Area", site.area);
+      fact(list, "Coordinates", `${site.lat.toFixed(4)}, ${site.lon.toFixed(4)}`);
+      if (site.notes) fact(list, "Access notes", site.notes);
+      right.append(list);
+
+      const links = el("div", "links");
+      const maps = el("a", "", "Open in Google Maps");
+      maps.href = `https://www.google.com/maps/search/?api=1&query=${site.lat},${site.lon}`;
+      maps.target = "_blank";
+      maps.rel = "noopener";
+      links.append(maps);
+      if (/^https?:\/\//.test(site.website)) {
+        const web = el("a", "", "Official website");
+        web.href = site.website;
+        web.target = "_blank";
+        web.rel = "noopener";
+        links.append(web);
+      }
+      right.append(links);
+
+      layout.append(left, right);
+      content.append(layout);
+    }
+
+    const id = new URLSearchParams(location.search).get("id");
+    loadSites()
+      .then((sites) => {
+        const site = sites.find((s) => String(s.id) === id);
+        if (site) show(site);
+        else content.textContent = "Site not found. Go back and pick one from the list.";
+      })
+      .catch((err) => {
+        content.textContent = "Could not load this site.";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
