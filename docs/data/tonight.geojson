@@ -18,9 +18,9 @@
         "dark": 0.707,
         "score": 18,
         "cloud": 0,
-        "humidity": 62,
+        "humidity": 63,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -38,11 +38,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 2595.4,
         "dark": 0.762,
-        "score": 19,
-        "cloud": 0,
-        "humidity": 73,
+        "score": 18,
+        "cloud": 3,
+        "humidity": 78,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -60,11 +60,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 2093.3,
         "dark": 0.772,
-        "score": 19,
-        "cloud": 1,
-        "humidity": 69,
+        "score": 18,
+        "cloud": 6,
+        "humidity": 73,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -82,11 +82,11 @@
         "area": "Mt. Baldy",
         "elevation_m": 1362.4,
         "dark": 0.65,
-        "score": 17,
+        "score": 18,
         "cloud": 0,
-        "humidity": 48,
+        "humidity": 45,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -104,11 +104,11 @@
         "area": "Antelope Valley",
         "elevation_m": 1397.0,
         "dark": 0.782,
-        "score": 20,
-        "cloud": 0,
-        "humidity": 60,
+        "score": 18,
+        "cloud": 8,
+        "humidity": 64,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -128,9 +128,9 @@
         "dark": 0.686,
         "score": 19,
         "cloud": 0,
-        "humidity": 41,
+        "humidity": 45,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -148,11 +148,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 2671.8,
         "dark": 0.947,
-        "score": 22,
-        "cloud": 12,
-        "humidity": 58,
+        "score": 19,
+        "cloud": 23,
+        "humidity": 61,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -172,9 +172,9 @@
         "dark": 0.974,
         "score": 24,
         "cloud": 0,
-        "humidity": 72,
+        "humidity": 75,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -192,11 +192,11 @@
         "area": "Carrizo Plain National Monument",
         "elevation_m": 800.3,
         "dark": 0.913,
-        "score": 20,
-        "cloud": 7,
-        "humidity": 84,
+        "score": 21,
+        "cloud": 4,
+        "humidity": 83,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -218,7 +218,7 @@
         "cloud": 0,
         "humidity": 62,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -236,11 +236,11 @@
         "area": "San Jacinto Mountains",
         "elevation_m": 1837.5,
         "dark": 0.843,
-        "score": 22,
-        "cloud": 1,
-        "humidity": 52,
+        "score": 16,
+        "cloud": 24,
+        "humidity": 61,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -260,9 +260,9 @@
         "dark": 0.875,
         "score": 22,
         "cloud": 0,
-        "humidity": 63,
+        "humidity": 64,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -280,11 +280,11 @@
         "area": "Cuyamaca Rancho State Park",
         "elevation_m": 1376.5,
         "dark": 0.933,
-        "score": 20,
-        "cloud": 13,
-        "humidity": 78,
+        "score": 21,
+        "cloud": 5,
+        "humidity": 84,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -302,11 +302,11 @@
         "area": "Cleveland National Forest",
         "elevation_m": 1809.2,
         "dark": 0.951,
-        "score": 14,
-        "cloud": 37,
-        "humidity": 82,
+        "score": 9,
+        "cloud": 59,
+        "humidity": 90,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -324,11 +324,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 2079.6,
         "dark": 0.945,
-        "score": 15,
-        "cloud": 39,
-        "humidity": 67,
+        "score": 14,
+        "cloud": 42,
+        "humidity": 70,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -348,9 +348,9 @@
         "dark": 0.892,
         "score": 24,
         "cloud": 0,
-        "humidity": 52,
+        "humidity": 53,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -370,9 +370,9 @@
         "dark": 0.929,
         "score": 25,
         "cloud": 0,
-        "humidity": 48,
+        "humidity": 50,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -392,9 +392,9 @@
         "dark": 0.946,
         "score": 26,
         "cloud": 0,
-        "humidity": 43,
+        "humidity": 45,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -414,9 +414,9 @@
         "dark": 0.968,
         "score": 27,
         "cloud": 0,
-        "humidity": 40,
+        "humidity": 43,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -436,9 +436,9 @@
         "dark": 0.953,
         "score": 27,
         "cloud": 0,
-        "humidity": 29,
+        "humidity": 32,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -458,9 +458,9 @@
         "dark": 0.934,
         "score": 27,
         "cloud": 0,
-        "humidity": 31,
+        "humidity": 32,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -480,9 +480,9 @@
         "dark": 0.961,
         "score": 25,
         "cloud": 0,
-        "humidity": 58,
+        "humidity": 62,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     },
     {
@@ -504,7 +504,7 @@
         "cloud": 0,
         "humidity": 62,
         "moon_illum": 86,
-        "updated": "2026-11-20T21:34:46+00:00"
+        "updated": "2026-11-21T00:38:11+00:00"
       }
     }
   ]
