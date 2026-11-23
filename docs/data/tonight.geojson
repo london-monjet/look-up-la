@@ -18,9 +18,9 @@
         "dark": 0.707,
         "score": 0,
         "cloud": 100,
-        "humidity": 51,
+        "humidity": 46,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -40,9 +40,9 @@
         "dark": 0.762,
         "score": 0,
         "cloud": 100,
-        "humidity": 41,
+        "humidity": 25,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -62,9 +62,9 @@
         "dark": 0.772,
         "score": 0,
         "cloud": 100,
-        "humidity": 36,
+        "humidity": 35,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -84,9 +84,9 @@
         "dark": 0.65,
         "score": 0,
         "cloud": 100,
-        "humidity": 46,
+        "humidity": 48,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -106,9 +106,9 @@
         "dark": 0.782,
         "score": 0,
         "cloud": 100,
-        "humidity": 41,
+        "humidity": 38,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -128,9 +128,9 @@
         "dark": 0.686,
         "score": 0,
         "cloud": 100,
-        "humidity": 53,
+        "humidity": 50,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -150,9 +150,9 @@
         "dark": 0.947,
         "score": 0,
         "cloud": 100,
-        "humidity": 41,
+        "humidity": 37,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -172,9 +172,9 @@
         "dark": 0.974,
         "score": 0,
         "cloud": 100,
-        "humidity": 57,
+        "humidity": 53,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -192,11 +192,11 @@
         "area": "Carrizo Plain National Monument",
         "elevation_m": 800.3,
         "dark": 0.913,
-        "score": 0,
-        "cloud": 100,
-        "humidity": 71,
+        "score": 2,
+        "cloud": 86,
+        "humidity": 59,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -216,9 +216,9 @@
         "dark": 0.844,
         "score": 0,
         "cloud": 100,
-        "humidity": 43,
+        "humidity": 44,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -237,10 +237,10 @@
         "elevation_m": 1837.5,
         "dark": 0.843,
         "score": 0,
-        "cloud": 100,
-        "humidity": 57,
+        "cloud": 99,
+        "humidity": 56,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -258,11 +258,11 @@
         "area": "Palomar Mountain",
         "elevation_m": 1365.1,
         "dark": 0.875,
-        "score": 0,
-        "cloud": 98,
-        "humidity": 52,
+        "score": 3,
+        "cloud": 83,
+        "humidity": 54,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -280,11 +280,11 @@
         "area": "Cuyamaca Rancho State Park",
         "elevation_m": 1376.5,
         "dark": 0.933,
-        "score": 7,
-        "cloud": 54,
-        "humidity": 66,
+        "score": 3,
+        "cloud": 83,
+        "humidity": 72,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -302,11 +302,11 @@
         "area": "Cleveland National Forest",
         "elevation_m": 1809.2,
         "dark": 0.951,
-        "score": 7,
-        "cloud": 58,
-        "humidity": 63,
+        "score": 5,
+        "cloud": 70,
+        "humidity": 68,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -326,9 +326,9 @@
         "dark": 0.945,
         "score": 0,
         "cloud": 100,
-        "humidity": 30,
+        "humidity": 24,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -348,9 +348,9 @@
         "dark": 0.892,
         "score": 1,
         "cloud": 91,
-        "humidity": 48,
+        "humidity": 50,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -368,11 +368,11 @@
         "area": "Joshua Tree National Park",
         "elevation_m": 1284.8,
         "dark": 0.929,
-        "score": 2,
-        "cloud": 89,
-        "humidity": 48,
+        "score": 1,
+        "cloud": 96,
+        "humidity": 50,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -391,10 +391,10 @@
         "elevation_m": 1371.2,
         "dark": 0.946,
         "score": 2,
-        "cloud": 86,
-        "humidity": 42,
+        "cloud": 88,
+        "humidity": 43,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -412,11 +412,11 @@
         "area": "Joshua Tree National Park",
         "elevation_m": 938.2,
         "dark": 0.968,
-        "score": 4,
-        "cloud": 76,
-        "humidity": 41,
+        "score": 5,
+        "cloud": 74,
+        "humidity": 42,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -434,11 +434,11 @@
         "area": "Anza-Borrego Desert State Park",
         "elevation_m": 409.5,
         "dark": 0.953,
-        "score": 1,
-        "cloud": 97,
-        "humidity": 35,
+        "score": 4,
+        "cloud": 78,
+        "humidity": 37,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -456,11 +456,11 @@
         "area": "Anza-Borrego Desert State Park",
         "elevation_m": 234.9,
         "dark": 0.934,
-        "score": 0,
-        "cloud": 98,
-        "humidity": 33,
+        "score": 5,
+        "cloud": 72,
+        "humidity": 35,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -478,11 +478,11 @@
         "area": "Borrego Springs",
         "elevation_m": 774.9,
         "dark": 0.961,
-        "score": 6,
-        "cloud": 67,
-        "humidity": 48,
+        "score": 4,
+        "cloud": 78,
+        "humidity": 52,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     },
     {
@@ -502,9 +502,9 @@
         "dark": 0.828,
         "score": 0,
         "cloud": 100,
-        "humidity": 37,
+        "humidity": 39,
         "moon_illum": 100,
-        "updated": "2026-11-23T15:51:43+00:00"
+        "updated": "2026-11-23T18:42:50+00:00"
       }
     }
   ]
