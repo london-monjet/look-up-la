@@ -18,9 +18,9 @@
         "dark": 0.707,
         "score": 15,
         "cloud": 0,
-        "humidity": 26,
+        "humidity": 29,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -38,11 +38,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 2595.4,
         "dark": 0.762,
-        "score": 17,
+        "score": 16,
         "cloud": 0,
-        "humidity": 22,
+        "humidity": 27,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -62,9 +62,9 @@
         "dark": 0.772,
         "score": 17,
         "cloud": 0,
-        "humidity": 26,
+        "humidity": 30,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -82,11 +82,11 @@
         "area": "Mt. Baldy",
         "elevation_m": 1362.4,
         "dark": 0.65,
-        "score": 15,
+        "score": 14,
         "cloud": 0,
-        "humidity": 17,
+        "humidity": 18,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -106,9 +106,9 @@
         "dark": 0.782,
         "score": 17,
         "cloud": 0,
-        "humidity": 25,
+        "humidity": 29,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -128,9 +128,9 @@
         "dark": 0.686,
         "score": 15,
         "cloud": 0,
-        "humidity": 28,
+        "humidity": 27,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -152,7 +152,7 @@
         "cloud": 0,
         "humidity": 31,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -170,11 +170,11 @@
         "area": "Los Padres National Forest",
         "elevation_m": 1070.6,
         "dark": 0.974,
-        "score": 20,
-        "cloud": 3,
-        "humidity": 35,
+        "score": 19,
+        "cloud": 4,
+        "humidity": 42,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -193,10 +193,10 @@
         "elevation_m": 800.3,
         "dark": 0.913,
         "score": 16,
-        "cloud": 1,
-        "humidity": 76,
+        "cloud": 6,
+        "humidity": 73,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -216,9 +216,9 @@
         "dark": 0.844,
         "score": 18,
         "cloud": 0,
-        "humidity": 30,
+        "humidity": 33,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -238,9 +238,9 @@
         "dark": 0.843,
         "score": 19,
         "cloud": 0,
-        "humidity": 18,
+        "humidity": 16,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -262,7 +262,7 @@
         "cloud": 0,
         "humidity": 23,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -282,9 +282,9 @@
         "dark": 0.933,
         "score": 20,
         "cloud": 0,
-        "humidity": 34,
+        "humidity": 35,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -302,11 +302,11 @@
         "area": "Cleveland National Forest",
         "elevation_m": 1809.2,
         "dark": 0.951,
-        "score": 20,
-        "cloud": 1,
-        "humidity": 26,
+        "score": 21,
+        "cloud": 0,
+        "humidity": 25,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -326,9 +326,9 @@
         "dark": 0.945,
         "score": 20,
         "cloud": 0,
-        "humidity": 28,
+        "humidity": 29,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -350,7 +350,7 @@
         "cloud": 0,
         "humidity": 39,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -368,11 +368,11 @@
         "area": "Joshua Tree National Park",
         "elevation_m": 1284.8,
         "dark": 0.929,
-        "score": 20,
+        "score": 19,
         "cloud": 0,
-        "humidity": 36,
+        "humidity": 37,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -394,7 +394,7 @@
         "cloud": 0,
         "humidity": 30,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -412,11 +412,11 @@
         "area": "Joshua Tree National Park",
         "elevation_m": 938.2,
         "dark": 0.968,
-        "score": 20,
-        "cloud": 5,
-        "humidity": 31,
+        "score": 18,
+        "cloud": 13,
+        "humidity": 32,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -436,9 +436,9 @@
         "dark": 0.953,
         "score": 21,
         "cloud": 0,
-        "humidity": 17,
+        "humidity": 19,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -458,9 +458,9 @@
         "dark": 0.934,
         "score": 21,
         "cloud": 0,
-        "humidity": 18,
+        "humidity": 20,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -480,9 +480,9 @@
         "dark": 0.961,
         "score": 21,
         "cloud": 0,
-        "humidity": 25,
+        "humidity": 26,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     },
     {
@@ -502,9 +502,9 @@
         "dark": 0.828,
         "score": 17,
         "cloud": 0,
-        "humidity": 46,
+        "humidity": 43,
         "moon_illum": 96,
-        "updated": "2026-11-25T18:37:07+00:00"
+        "updated": "2026-11-25T21:44:50+00:00"
       }
     }
   ]
