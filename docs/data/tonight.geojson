@@ -20,7 +20,7 @@
         "cloud": 0,
         "humidity": 30,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -38,11 +38,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 2595.4,
         "dark": 0.762,
-        "score": 16,
+        "score": 17,
         "cloud": 0,
-        "humidity": 27,
+        "humidity": 25,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -60,11 +60,11 @@
         "area": "Angeles National Forest",
         "elevation_m": 2093.3,
         "dark": 0.772,
-        "score": 16,
+        "score": 17,
         "cloud": 0,
-        "humidity": 32,
+        "humidity": 29,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -84,9 +84,9 @@
         "dark": 0.65,
         "score": 14,
         "cloud": 0,
-        "humidity": 20,
+        "humidity": 19,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -106,9 +106,9 @@
         "dark": 0.782,
         "score": 17,
         "cloud": 0,
-        "humidity": 29,
+        "humidity": 28,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -128,9 +128,9 @@
         "dark": 0.686,
         "score": 15,
         "cloud": 0,
-        "humidity": 31,
+        "humidity": 32,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -149,10 +149,10 @@
         "elevation_m": 2671.8,
         "dark": 0.947,
         "score": 20,
-        "cloud": 1,
+        "cloud": 0,
         "humidity": 33,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -171,10 +171,10 @@
         "elevation_m": 1070.6,
         "dark": 0.974,
         "score": 20,
-        "cloud": 1,
-        "humidity": 36,
+        "cloud": 2,
+        "humidity": 38,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -192,11 +192,11 @@
         "area": "Carrizo Plain National Monument",
         "elevation_m": 800.3,
         "dark": 0.913,
-        "score": 14,
-        "cloud": 12,
-        "humidity": 84,
+        "score": 15,
+        "cloud": 8,
+        "humidity": 78,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -216,9 +216,9 @@
         "dark": 0.844,
         "score": 18,
         "cloud": 0,
-        "humidity": 34,
+        "humidity": 33,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -238,9 +238,9 @@
         "dark": 0.843,
         "score": 19,
         "cloud": 0,
-        "humidity": 20,
+        "humidity": 15,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -260,9 +260,9 @@
         "dark": 0.875,
         "score": 19,
         "cloud": 0,
-        "humidity": 23,
+        "humidity": 24,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -284,7 +284,7 @@
         "cloud": 0,
         "humidity": 38,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -304,9 +304,9 @@
         "dark": 0.951,
         "score": 21,
         "cloud": 0,
-        "humidity": 26,
+        "humidity": 27,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -325,10 +325,10 @@
         "elevation_m": 2079.6,
         "dark": 0.945,
         "score": 20,
-        "cloud": 1,
-        "humidity": 29,
+        "cloud": 0,
+        "humidity": 32,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -348,9 +348,9 @@
         "dark": 0.892,
         "score": 19,
         "cloud": 0,
-        "humidity": 39,
+        "humidity": 38,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -370,9 +370,9 @@
         "dark": 0.929,
         "score": 19,
         "cloud": 0,
-        "humidity": 37,
+        "humidity": 36,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -392,9 +392,9 @@
         "dark": 0.946,
         "score": 20,
         "cloud": 0,
-        "humidity": 31,
+        "humidity": 30,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -416,7 +416,7 @@
         "cloud": 0,
         "humidity": 34,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -438,7 +438,7 @@
         "cloud": 0,
         "humidity": 20,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -460,7 +460,7 @@
         "cloud": 0,
         "humidity": 20,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -480,9 +480,9 @@
         "dark": 0.961,
         "score": 21,
         "cloud": 0,
-        "humidity": 27,
+        "humidity": 26,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     },
     {
@@ -502,9 +502,9 @@
         "dark": 0.828,
         "score": 16,
         "cloud": 0,
-        "humidity": 51,
+        "humidity": 52,
         "moon_illum": 96,
-        "updated": "2026-11-26T00:41:28+00:00"
+        "updated": "2026-11-26T03:46:36+00:00"
       }
     }
   ]
