@@ -1,0 +1,26 @@
+{
+  "Chilao Visitor Center": { "access": "temporary", "notes": "Day use. Forest Adventure Pass needed for parking.", "image": "images/chilao.jpg", "https://www.fs.usda.gov/r05/angeles/recreation/chilao-visitor-center": "" },
+  "Dawson Saddle": { "access": "public", "notes": "Roadside pullout on Angeles Crest Highway. Road can close for snow or fire.", "image": "images/dawson.jpg", "https://www.fs.usda.gov/r05/angeles/recreation/trails/dawson-saddle-trail": "" },
+  "Table Mountain Campground": { "access": "restricted", "notes": "Campground. Overnight stay needs a reservation.", "image": "images/table_mountain.png", "https://www.recreation.gov/camping/campgrounds/233735": "" },
+  "Manker Flats": { "access": "public", "notes": "Trailhead parking. Forest Adventure Pass needed.","image": "images/manker.png", "https://www.fs.usda.gov/r05/angeles/recreation/manker-flat-campground": "" },
+  "Devil's Punchbowl": { "access": "public", "notes": "County park. Closes around sunset, so night visits need special permission.", "image": "images/punchbowl.jpg", "https://parks.lacounty.gov/devils-punchbowl-natural-area-and-nature-center/": "" },
+  "Sandstone Peak Trailhead": { "access": "public", "notes": "Trailhead parking. Check posted hours.", "image": "images/sandstone.jpg", "https://www.nps.gov/samo/planyourvisit/circlexranch.htm": "" },
+  "Mt. Pinos Parking Area": { "access": "temporary", "notes": "National forest parking area. Popular with astronomy groups.", "image": "pinos.jpg", "https://www.fs.usda.gov/r05/lospadres/recreation/mt-pinos-campground": "" },
+  "Figueroa Mountain": { "access": "public", "notes": "Forest road. Winter closures are possible.", "image": "images/figueroa.jpeg", "https://www.alltrails.com/trail/us/california/figueroa-mountain": "" },
+  "Carrizo Plain Goodwin Center": { "access": "public", "notes": "National monument visitor center. Check road and visitor center hours.", "image": "images/carrizo.jpg", "https://www.blm.gov/visit/goodwin-education-center": "" },
+  "Saddleback Butte State Park": { "access": "restricted", "notes": "State park. Overnight camping needs a reservation.", "image": "images/saddleback.jpg", "https://www.parks.ca.gov/?page_id=618": "" },
+  "Humber Park": { "access": "public", "notes": "Trailhead parking. Forest Adventure Pass needed.", "image": "images/humber.jpg", "https://www.fs.usda.gov/r05/sanbernardino/recreation/humber-park-trailhead-parking": "" },
+  "Palomar Mountain State Park": { "access": "restricted", "notes": "State park. Night access means camping, so reserve ahead.", "image": "images/palomar.jpg", "https://www.parks.ca.gov/?page_id=637": "" },
+  "Paso Picacho Campground": { "access": "restricted", "notes": "Campground. Reservation needed.", "image": "images/paso.jpg", "https://www.parks.ca.gov/?page_id=667": "" },
+  "Laguna Mountain Recreation Area": { "access": "public", "notes": "National forest recreation area. Some areas need a pass.", "image": "images/laguna.jpg", "https://www.blm.gov/visit/laguna-mountain": "" },
+  "Keys View": { "access": "public", "notes": "Joshua Tree National Park entrance fee applies.", "image": "images/keys_view.jpg", "https://www.alltrails.com/trail/us/california/keys-view": "" },
+  "Hidden Valley": { "access": "public", "notes": "Joshua Tree National Park entrance fee applies. Campsites are first come, first served.", "image": "images/hidden_valley.jpg", "https://www.nps.gov/jotr/planyourvisit/hidden-valley-campground.htm": "" },
+  "Jumbo Rocks Campground": { "access": "restricted", "notes": "Campground in Joshua Tree. Reservation needed.", "image": "images/jumbo_rocks.jpg", "https://www.nps.gov/jotr/planyourvisit/jumbo-rocks-campground.htm": "" },
+  "Cottonwood Spring": { "access": "restricted", "notes": "Campground in Joshua Tree. Reservation needed.", "image": "images/cottonwood.jpg", "https://www.nps.gov/jotr/planyourvisit/cottonwood.htm": "" },
+  "Borrego Palm Canyon Campground": { "access": "restricted", "notes": "State park campground. Reservation needed.", "image": "images/borrego.jpg", "https://www.parks.ca.gov/?page_id=638": "" },
+  "Anza-Borrego Visitor Center": { "access": "public", "notes": "Visitor center area. Check hours for night access.", "image": "images/anza_borrego.jpg", "https://www.parks.ca.gov/?page_id=638": "" },
+  "Magic Portal Stargazer Retreat": { "access": "restricted", "notes": "Private property. Night access requires permission.", "image": "images/magic_portal.jpg", "https://www.hipcamp.com/en-US/land/california-magic-portal-stargazer-s-retreat-r57h2p9z?utm_source=google_maps&utm_campaign=suggest_website&adults=2&children=0": "" },
+  "Blair Valley Campground": { "access": "public", "notes": "Public property, no reservations required", "image": "images/blair.jpg", "https://thedyrt.com/camping/california/blair-valley-campground": "" },
+  "Chula Vista Walk-In Campground": { "access": "public", "notes": "Campground, no reservations required", "image": "images/chula.jpg", "https://www.fs.usda.gov/r05/lospadres/recreation/chula-vista-walk-campground": "" } 
+
+}

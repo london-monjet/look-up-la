@@ -6,6 +6,7 @@ export const ACCESS_LABELS = {
   public: "Public",
   restricted: "Private / Reservation",
   unknown: "Check access",
+  temporary: "Temporarily closed",
 };
 
 // Same three colors as the legend: low -> mid -> high.
